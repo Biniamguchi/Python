@@ -1,0 +1,34 @@
+pip install Django: installs a package called Flask.
+
+pip list: List installed packages, including editables.
+Packages are listed in a case-insensitive sorted order
+-o, --outdated
+List outdated packages
+-u, --uptodate
+List uptodate packages
+-e, --editable
+List editable projects.
+
+pip install Django (We know you already ran this one. What information do you see returned in terminal after this command?)
+Collection Django
+   Using Django-1.11.5-py2.py3-none-any.whl
+ ...
+Sucessfully install Django-1.11.5
+
+pip freeze (What's the difference between freeze and list?)
+pip freeze: Output installed packages in requirements format.
+click==6.7
+pip list: just list installed packages.
+click(6.7)
+in other words there are two differences:
+
+1. Output format, freeze gives us the standard requirement format that may be used later with pip install -r to install requirements from.
+2. Output content, pip list include editables which pip freeze does not.
+
+First cd into your Desktop directory (cd ~/Desktop), then run this command: pip freeze > requirements.txt. What do you see when you ls? What's inside this file?
+
+pip uninstall Django: uninstalls Django
+
+pip show Django: Show information about one or more installed packages.Here it shows the name,version,summary etc,about django.
+pip search Flask. This one might take a moment to execute.
+Searchs for PyPI(Flask) packages whose name or summary contains <Flask>.
