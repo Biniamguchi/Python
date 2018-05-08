@@ -1,0 +1,167 @@
+pip install Django: installs a package called Django.
+
+pip list: List installed packages, including editables.
+Packages are listed in a case-insensitive sorted order
+-o, --outdated
+List outdated packages
+-u, --uptodate
+List uptodate packages
+-e, --editable
+List editable projects.
+
+pip install Django (We know you already ran this one. What information do you see returned in terminal after this command?)
+Collecting Django
+   Using Django-1.11.13-py2.py3-none-any.whl
+ ...
+Sucessfully installed Django-1.11.13
+
+pip freeze (What's the difference between freeze and list?)
+pip freeze: Output installed packages in requirements format.
+click==6.7
+pip list: just list installed packages.
+click(6.7)
+in other words there are two differences:
+
+1. Output format, freeze gives us the standard requirement format that may be used later with pip install -r to install requirements from.
+2. Output content, pip list include editables which pip freeze does not.
+
+First cd into your Desktop directory (cd ~/Desktop), then run this command: pip freeze > requirements.txt. What do you see when you ls? What's inside this file?
+
+It brings some of the installed packages in requirements format.
+click==6.7
+Django==1.11.6
+Flask==0.12.2
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+pytz==2017.3
+Werkzeug==0.12.2
+
+pip uninstall Django: Successfully uninstalls Django
+
+pip show Django: if Django is uninstalled, it doesn't show any information.
+If Django is uninstalled it shows information about one or more installed packages.Here it shows the name,version,summary etc,about django.
+
+pip search Flask. This one might take a moment to execute.
+Searchs for PyPI(Flask) packages whose name or summary contains <Flask>.
+
+
+C:~\Desktop>pip search Flask
+Flask-OrientDB (0.1)             - A Flask extension for using OrientDB with
+                                   Flask
+Flask-Pure (0.5)                 - Flask-Pure - a Flask extension for Pure.css
+Flask-SimpleMDE (0.3.0)          - Flask-SimpleMDE - a Flask extension for
+                                   SimpleMDE
+Flask-LoginManager (1.1.6)       - Flask-Loginmanager supports multiple roles
+                                   and permissions for Flask, inspired by
+                                   Flask-Login
+Flask-RESTive (0.0.3)            - Flask RESTive is a REST API Flask extension
+                                   based on Flask-RESTful & Marshmallow.
+Fifty-Flask (1.2.0)              - Flask enhancements.
+Flask-AutoIndex (0.6)            - The mod_autoindex for Flask
+Flask-BDEA (0.1.0)               - Flask-BDEA
+Flask-Chargebee (0.0.1)          - Flask-Chargebee
+Flask-Clearbit (0.1.0)           - Flask-Clearbit
+Flask-ElasticUtils (0.1.7)       - ElasticUtils for Flask
+Flask-FileRev (0.1.0)            - Flask-FileRev
+Flask-Gears (0.2)                - Gears for Flask
+Flask-GripControl (0.0.1)        - Flask GripControl
+Flask-Intercom (0.1.0)           - Flask-Intercom
+Flask-Keen (0.1.0)               - Flask-Keen
+Flask-Mustache (0.4.1)           - Mustache for Flask
+Flask-NextCaller (0.1.0)         - Flask-NextCaller
+Flask-OAuthlib (0.9.4)           - OAuthlib for Flask
+Flask-PubSub (0.1.0)             - Flask-PubSub
+Flask-Quik (0.1.1)               - Quik for Flask
+Flask-Shopify (0.2)              - Shopify Flask
+Flask-SPF (0.0.0)                - Flask-SPF
+Flask-SRI (0.1.0)                - Flask-SRI
+Flask-Stripe (0.1.0)             - Flask-Stripe
+Flask-TaskTiger (0.0.1)          - Flask TaskTiger
+flask-toolbox (0.0.2)            - A flask toolbox.
+Flask-Turbolinks (0.2.0)         - Turbolinks for Flask.
+Flask-Watson (0.1.0)             - Flask-Watson
+Flask-Weixin (0.5.0)             - Weixin for Flask.
+flask-ws (0.0.1.0)               - Websocket for flask.
+flask-ypaginate (0.1.3)          - Pagination for Flask
+sockjs-flask (0.3)               - SockJs for Flask
+airbrake-flask (1.0.7)           - airbrake-flask - Airbrake client for Python
+                                   Flask
+flask-coffee2js (0.1.2)          - A small Flask extension that adds
+                                   CoffeScript support to Flask.
+Flask-Collect (1.3.2)            - Flask-Collect -- Collect static files in
+                                   Flask application
+Flask-Diced (0.3)                - Flask-Diced - CRUD views generator for
+                                   Flask
+flask-filters (0.3)              - The Flask Filter to use with flask-restful
+                                   and Relational DB
+Flask-GeoIP (0.1.3)              - Flask-GeoIP -------------  Simple Flask
+                                   extension for pygeoip.
+flask-lesscss (0.9.1)            - A small Flask extension that adds LessCSS
+                                   support to Flask.
+flask-myapi (0.1)                - Flask-MyAPI - RESTful support library for
+                                   Flask
+flask-shell (0.1.3)              - Flask extension to improve shell command
+                                   for the Flask CLI.
+flask-stylus2css (0.1)           - A small Flask extension that adds Stylus
+                                   support to Flask.
+castle-flask (0.0.1)             - A Flask client for Castle.io
+Flask-ACL (0.0.1)                - Access control lists for Flask.
+Flask-ADFS (0.1.17)              - User session management for Flask
+Flask-Airbrake (0.0.3)           - Flask extension for Airbrake
+Flask-Alchy (0.5.0)              - Flask extension for alchy
+Flask-API (1.0)                  - Browsable web APIs for Flask.
+Flask-APIBlueprint (1.0.0)       - Route inheritance for Flask Blueprints
+flask-apidoc (1.1.2)             - Adds ApiDoc support to Flask
+Flask-API.yandex (0.6.2.1)       - Browsable web APIs for Flask.
+Flask-APScheduler (1.8.0)        - Adds APScheduler support to Flask
+Flask-Async (0.11-dev-20140215)  - A fork of Flask to support asyncio
+Flask-Attest (0.1dev)            - Test Flask applications with Attest
+Flask-Auth (0.85)                - Auth extension for Flask.
+Flask-Authbone (0.3)             - Plugguble Auth framework for Flask.
+Flask-Autodoc (0.1.2)            - Documentation generator for flask
+Flask-Avatar (0.1.3)             - To generate avatar for flask
+Flask-AYAH (0.1)                 - Are you a Human? Flask Extension
+Flask-Bcrypt (0.7.1)             - Brcrypt hashing for Flask.
+Flask-BCS (0.9.1)                - Baidu Cloud Storage for Flask
+Flask-Beaker (0.2.0)             - Beaker session interface for Flask.
+Flask-Beanstalk (0.0.3)          - Utilities for using Beanstalk with Flask
+flask-bigtempo (0.8)             - Flask extension for bigtempo features
+Flask-bitjws (0.1.1.5)           - A Flask extension for bitjws
+                                   authentication.
+flask-blitzdb (0.1)              - Flask extension for blitzdb
+flask-bluelogin (0.2.7)          - Flask BlueLogin module
+flask-blueprint (1.2.2)          - Flask blueprint generator
+flask-bluestatic (0.1.0)         - Flask BlueStatic module
+Flask-BotoSQS (0.2.0)            - Boto3 SQS integration for Flask
+Flask-Breve (0.2)                - Breve templating with Flask
+Flask-BrowserID (0.1.0)          - Flask support for BrowserID authentication
+Flask-Builder (0.9)              - Flask-application factory
+Flask-Cachual (0.2.0)            - Flask extension for the Cachual library
+Flask-Canonical (0.1.2)          - Easy canonical logging for Flask
+Flask-Captain (0.1.1)            - Handle webhooks with Flask
+Flask-CAS (1.0.1)                - Flask extension for CAS
+Flask-CassandraDB (0.0.1)        - connect cassandra to flask
+flask-cbv (0.0.1)                - Class based views for Flask.
+Flask-Celery (2.4.3)             - Celery integration for Flask
+Flask-Cent (0.1.3)               - centrifugal/cent client for flask
+Flask-CI (1.2.9.1)               - Continuous Integration support for Flask
+Flask-CKEditor (0.3.3)           - CKEditor integration for Flask.
+Flask-Classful (0.14.1)          - Class based views for Flask
+Flask-Classy (0.6.10)            - Class based views for Flask
+Flask-ClickHouse (1.0.0)         - ClickHouse support for Flask applications
+Flask-Coffee (0.3)               - Fill your flask with coffee.
+Flask-Colorpicker (0.9)          - color picker flask extension
+flask-conditional (0.1)          - Conditional decorators for Flask routes
+Flask-Config (0.2.1)             - Flask configuration class
+Flask-Creole (0.4.4)             - Creole parser filters for Flask
+Flask-CuttlePool (0.2.0)         - A Flask extension for CuttlePool
+Flask-Datepicker (0.8)           - date picker flask extension
+Flask-DBKit (0.0.1)              - dbkit integration for Flask.
+flask-discoverer (0.0.2)         - Flask API autodiscovery
+flask-djcelery (0.1)             - An integration of djcelery with flask
+                                   application
+Flask-DogStatsd (0.5.0)          - A Flask extension for dogstatsd-python
+Flask-DotEnv (0.1.1)             - The .env file support for Flask
+Flask-Dropzone (1.4.3)           - Upload file in Flask with Dropzone.js.
+
