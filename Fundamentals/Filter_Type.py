@@ -13,7 +13,7 @@ lL = [4,34,22,68,9,13,3,5,7,9,2,12,45,923]
 eL = []
 spL = ['name','address','phone number','social security number']
 
-test = mL
+test = sS
 test_type = type(test)
 if test_type is int:
     if test >= 100:
@@ -30,3 +30,4 @@ elif isinstance(test, list):
         print "Big list!"
     else:
         print "Short list."
+

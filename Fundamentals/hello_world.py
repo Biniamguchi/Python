@@ -1,5 +1,4 @@
 print "Hello World!"
-# '''
 x = "Hello Python"
 print x
 y = 42
@@ -16,16 +15,18 @@ def say_hello(name):
 # now we're unindented and have ended the previous block
 print 'Outside of the function'
 
-# name = "zen":
-# print "My name is " + name
-# first_name = "Zen"
-# last_name = "Coder"
-# print "My name is {} {}".format(first_name, last_name)
+name = "zen"
+print "My name is " + name
+
+first_name = "Zen"
+last_name = "Coder"
+print "My name is {} {}".format(first_name, last_name)
 #
-# for count in range(0, 5):
-#     print"looping - ", count
-# age = 15
-# if age >= 18:
-#   print 'Legal age'
-# else:
-#   print 'You are so young!'
+for count in range(0, 5):
+    print"looping - ", count
+
+age = 15
+if age >= 18:
+  print 'Legal age'
+else:
+  print 'You are so young!'
