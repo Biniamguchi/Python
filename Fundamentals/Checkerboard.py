@@ -4,3 +4,4 @@ def checkerboard():
             print "* " * 4
         else:
             print " *" * 4
+checkerboard()
