@@ -26,3 +26,24 @@ print b
 #     return newLi
 #multiply([2,4,10,16],5)
 
+# Hacker Challenge
+# def layered_multiples(list_mult):
+#     list_1s = []                            # create empty list output of 1s
+#     for idx in range(0,len(list_mult)):     # FOR to iterate thru idxs of list_mult
+#         list_1s.append([])                  # Append empty sub-list into list_1s
+#         while list_mult[idx] > 0:           # FOR to divide up nums in each idx of list_mult
+#             list_1s[idx].append(1)          # Append 1 into sub-list until num < 1
+#             list_mult[idx] -= 1
+#     return list_1s
+
+
+
+# def layered_multiples(arr):
+#     print arr
+#     new_array = []
+#     for x in arr:
+#         val_arr = []
+#         for i in range(0,x):
+#             val_arr.append(1)
+#         new_array.append(val_arr)
+#     return new_array
