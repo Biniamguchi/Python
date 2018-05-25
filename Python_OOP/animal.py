@@ -1,6 +1,6 @@
 class Animal(object):
     def __init__(self,name,health):
-        self.name   = name
+        self.name = name
         self.health = health
     def walk(self):
         self.health -= 1
