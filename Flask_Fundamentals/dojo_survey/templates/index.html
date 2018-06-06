@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" type="text/css" href="{{style}}">
+</head>
+<body>
+    <form action="/result" method="POST">
+        <table>
+            <tr>
+                <td>Your Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Dojo Location:</td>
+                <td>
+                <select name="location">
+                    <option value="DC">DC</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="Texas">Texas</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite Language:</td>
+                <td>
+                <select name="language">
+                    <option value="javascript">Javascript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </select>
+                </td>
+            </tr>
+            <tr><td colspan="2">
+                Comment(optional):<br>
+                <textarea name="comment" rows="4" cols="40"></textarea>
+            </td></tr>
+            <tr><td colspan="2">
+                <input type="submit" value="Button">
+            </td></tr>
+        </table>
+        </form>
+</body>
+</html>
