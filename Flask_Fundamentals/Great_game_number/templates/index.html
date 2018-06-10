@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Game</title>
+</head>
+<body>
+    <h1>Guess a number between 1-100</h1>
+    <h2>Your guess:{{session["guess"]}}</h2>
+    <h2>Random Number: {{session["rand"]}}</h2>
+    <h2>{{session["res"]}}</h2>
+
+
+    <form action="/submit" method="post">
+        <input type="text" name="guess">
+        <input type="submit" name="sub">
+    </form>
+</body>
+</html>
+
+
+<!-- <html>
+    <head>
+       <title>Great Number Game</title>
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/114E371C-B73B-484A-9650-6EBA25116657/main.js" charset="UTF-8"></script></head>
+    <body>
+    <h1>Welcome to the Great Number Game!</h1>
+      
+    <h1> I am thinking of a number between 1 and 100</h1>
+    <p>Take a guess!!</p> 
+    <h2>Your guess:{{session["guess"]}}</h2>
+    <h2>Random Number: {{session["answer"]}}</h2> -->
+    <!-- <h2>{{session["res"]}}</h2> -->
+
+
+<!--     <form action="/submit" method="post">
+        <input type="text" name="answer">
+        <input type="submit" name="sub">
+    </form>
+           
+      </form>
+
+    </body>
+</html>
+ -->
