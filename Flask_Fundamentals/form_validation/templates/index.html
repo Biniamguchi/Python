@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Basic Validation Example</title>
+  <link rel="stylesheet" type="text/css" href="{{style}}">
+</head>
+<body>
+  <h1>Enter a Valid(Any) Name!</h1>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %} -->
+         <!-- <p>{{message}}</p> -->
+         <h4 style="color:red;">{{message}}</h4>
+        {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <form action='/process' method='POST'>
+    Name:<input type="text" name="name">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html> 
+
+<!-- <html>
+<head>
+  <title>Email Validation Example</title>
+  <link rel="stylesheet" type="text/css" href="{{style}}">
+</head>
+<body>
+  <h1>Enter a Valid(Any) Email!</h1>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %} -->
+         <!-- <p>{{message}}</p> -->
+         <!-- <h4 style="color:red;">{{message}}</h4>
+        {% endfor %}
+    {% endif %}
+  {% endwith %}
+  <form action='/process' method='POST'>
+    Email:<input type="text" name="email">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html> 

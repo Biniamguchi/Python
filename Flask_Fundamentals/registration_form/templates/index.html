@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="{{style}}">
+    </head>
+
+    <body>
+        <h1>Registration:</h1>
+
+        <form class="grey" action="/process" method="post">
+            
+            <label class="formLabel">First Name:</label><input placeholder="{{session['first']}}" type="text" name="first">
+            <label class="formLabel">Last Name:</label><input placeholder="{{session['last']}}" type="text" name="last">
+            <label class="formLabel">E-mail:</label><input placeholder="{{session['email']}}" type="text" name="email">
+            <label class="formLabel">Password:</label><input placeholder="{{session['pass']}}" type="password" name="pass">
+            <label class="formLabel">Confirm Password:</label><input placeholder="{{session['confirm']}}" type="password" name="confirm">
+            <label class="formLabel">Birthdate:</label><input placeholder="{{session['dob']}}" type="text" name="dob">
+
+            <input id="sub" type="submit" name="">
+        </form>
+    </body>
+</html>
