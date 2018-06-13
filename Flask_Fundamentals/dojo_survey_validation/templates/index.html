@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dojo Survey With Validation</title>
+    <link rel="stylesheet" type="text/css" href="{{style}}">
+</head>
+<body>
+    <form class="greyMain" action="/process" method="POST">
+        {% with msgs = get_flashed_messages() %}
+            {% if msgs %}
+                {% for msg in msgs %}
+                    <p class="warning">{{msg}}<p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <label>Name: </label><input type="text" name="name">
+        <label>Location: </label><input type="text" name="loc">
+        <label>Favorite Language: </label><input type="text" name="lang">
+        <label>Comment:</label><input type="text" name="com">
+        <input id="sub" type="submit">
+    </form>
+</body>
+</html>
