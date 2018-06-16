@@ -1,0 +1,23 @@
+ul{
+    width: 50%;
+    margin: auto;
+}
+
+ul li{
+    color: rgba(255,255,255,0.5);
+    width: 64px;
+    height: 24px;
+    display: inline-block;
+    padding: 16px;
+    margin: 0 5%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center
+}
+
+h1{
+    padding: 16px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    color: rgba(0,0,0,0.5);
+}
