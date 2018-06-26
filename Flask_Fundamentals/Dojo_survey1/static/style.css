@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgba(255,255,255,0.5);
+}
+
+body{
+    background-color: rgb(32,32,32);
+}
+
+.greyMain{
+    width: 512px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 24px;
+    background-color: rgba(0,0,0,0.25); 
+}
+
+label{
+    font-size: 14pt;
+    display: inline-block;
+    width: 30%;
+    height: 32px;
+    margin: 8px;
+}
+
+input{
+    color: rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.25);
+    font-size: 16pt;
+    display: inline-block;
+    width:65%;
+    height: 32px;
+    margin: auto;
+}
+
+#sub{
+    height: 32px;
+    width: 40%;
+    margin: auto;
+    margin-top: 16px;
+    display: block;
+}
+
+.warning{
+    display: block;
+    color: red;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
